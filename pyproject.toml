@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "derivative"
-version = "0.5.5"
+name = "derivative-legacy"
+version = "0.6.0"
 description = "Numerical differentiation in python."
 repository = "https://github.com/andgoldschmidt/derivative"
 documentation = "https://derivative.readthedocs.io/"
@@ -12,13 +12,15 @@ authors = [
 ]
 license = "MIT"
 readme = "README.rst"
-
+packages = [
+    { include = "derivative" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.7"
 numpy = "^1.18.3"
 scipy = "^1.4.1"
-scikit-learn = "^1"
+scikit-learn = "^0"
 
 # docs
 sphinx = {version = "^4.5", optional = true}
